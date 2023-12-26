@@ -112,6 +112,8 @@ export const CoreHelperUtil = {
 
   openHref(href: string, target: '_blank' | '_self') {
     window.open(href, target, 'noreferrer noopener')
+    // window.open(href, target, 'noreferrer noopener')
+    window.Telegram.WebApp.openLink(href);
   },
 
   async preloadImage(src: string) {

@@ -8,6 +8,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <>
+      <script src="https://telegram.org/js/telegram-web-app.js"></script>
       <Header />
       <main>{children}</main>
     </>
