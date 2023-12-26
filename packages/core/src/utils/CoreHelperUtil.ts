@@ -1,5 +1,14 @@
 import { ConstantsUtil } from './ConstantsUtil.js'
 import type { CaipAddress, LinkingRecord } from './TypeUtil.js'
+declare global {
+  interface Window {
+    Telegram: {
+      WebApp: {
+        openLink(href: string): void;
+      };
+    };
+  }
+}
 
 export const CoreHelperUtil = {
   isMobile() {
